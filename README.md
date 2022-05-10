@@ -12,7 +12,7 @@ Source: https://www.raspberrypi.com/software/
 
 It seems to update the Pi OS on a regular basis.  
 
-Connect Pi with ```ethernet``` at first -or - see wifi instructuions.
+Connect Pi with ```ethernet``` at first -or - see wifi setup.
 
 Boot Pi with new image.  Takes about 2 min on a 2GB Pi
 
@@ -33,26 +33,11 @@ https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-sh
 https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os
 
 
-## Display
+## Display Setup
 
-Use display of your choice on a differnt Pi.  Because the HiFiBerry uses all of the display pins you can either use the HDMI port, or another Pi dedicated to displaying songs.
+Use display of your choice.on a differnt Pi.  Because the HiFiBerry uses all of the display pins you can either use the HDMI port, or another Pi dedicated to displaying songs.
 
-## Song List
-
-There are specific ```<div> and <class>``` sections on the page of http://hifiberry.local/ so another script can grab song data.  For example python with the requests library can be used to get the ```<span class>``` "title" and "artist".
-
-Here is an example:
-```
-<div id="mini-now-playing-info" class="">
-  <div class="symbol focused-source-icon" style="-webkit-mask-image: url(&quot;/extensions/spotify/symbols-black/spotify.svg&quot;);"></div> 
-  <div class="now-playing-titles two-rows">
-    <div class="focused-source-name">Spotify Connect</div> 
-    <h1><span class="title">Beers On Me&nbsp;</span></h1> <h2><span class="artist">Dierks Bentley, BRELAND, HARDY&nbsp;</span></h2>
-  </div>
-</div>
-```
-
-
+## Basic Setup
 
 Here are some common things to do!
 
