@@ -1,5 +1,59 @@
 # The Core Build of a Raspberry Pi
 
+Update on 05/10/2022
+
+This is the repo for building a Pi from scratch.
+
+## Installation
+
+Use the Offical Mac Raspberry Pi Imager v1.4 
+
+Source: https://www.raspberrypi.com/software/
+
+It seems to update the Pi OS on a regular basis.  
+
+Connect Pi with ```ethernet``` at first -or - see wifi instructuions.
+
+Boot Pi with new image.  Takes about 2 min on a 2GB Pi
+
+Find the PI on the network, can be tricky with lots of devices!
+
+Log into the Pi
+
+## Authentication
+
+username: pi
+
+password: raspberry (default)
+
+https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os
+
+## Wifi Setup
+
+https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os
+
+
+## Display
+
+Use display of your choice on a differnt Pi.  Because the HiFiBerry uses all of the display pins you can either use the HDMI port, or another Pi dedicated to displaying songs.
+
+## Song List
+
+There are specific ```<div> and <class>``` sections on the page of http://hifiberry.local/ so another script can grab song data.  For example python with the requests library can be used to get the ```<span class>``` "title" and "artist".
+
+Here is an example:
+```
+<div id="mini-now-playing-info" class="">
+  <div class="symbol focused-source-icon" style="-webkit-mask-image: url(&quot;/extensions/spotify/symbols-black/spotify.svg&quot;);"></div> 
+  <div class="now-playing-titles two-rows">
+    <div class="focused-source-name">Spotify Connect</div> 
+    <h1><span class="title">Beers On Me&nbsp;</span></h1> <h2><span class="artist">Dierks Bentley, BRELAND, HARDY&nbsp;</span></h2>
+  </div>
+</div>
+```
+
+
+
 Here are some common things to do!
 
 
