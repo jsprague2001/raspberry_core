@@ -30,7 +30,9 @@ https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-sh
 
 ## Wifi Setup
 
-https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os
+
+
+https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
 
 ## Display Setup
