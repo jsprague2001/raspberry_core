@@ -54,6 +54,10 @@ network={
     psk="NETWORK-PASSWORD"
 }
 ```
+
+Eject SD card and boot in Raspberry PI
+
+
 https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
 https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
