@@ -36,12 +36,25 @@ For security reasons, ssh is no longer enabled by default. To enable it you need
 touch /Volumes/boot/ssh
 ```
 
-Create a file in the root of boot called: wpa_supplicant.conf (instructions below). Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
+Create a file in the root of boot called: wpa_supplicant.conf 
 
 ```
 touch /Volumes/boot/wpa_supplicant.conf
 ```
 
+Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
+
+```
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="NETWORK-NAME"
+    psk="NETWORK-PASSWORD"
+}
+```
+https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
 https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
 
