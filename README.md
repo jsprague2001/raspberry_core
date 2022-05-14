@@ -30,7 +30,17 @@ https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-sh
 
 ## Wifi Setup
 
+For security reasons, ssh is no longer enabled by default. To enable it you need to place an empty file named ssh (no extension) in the root of the boot disk.
 
+```
+touch /Volumes/boot/ssh
+```
+
+Create a file in the root of boot called: wpa_supplicant.conf (instructions below). Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
+
+```
+touch /Volumes/boot/wpa_supplicant.conf
+```
 
 https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
