@@ -119,6 +119,23 @@ $ touch tftdisplay.service
 $ sudo cp tftdisplay.service /etc/systemd/system/tftdisplay.service
 # Issues?  check permissions in /etc/systemd/system/
 ```
+Example service ```audioclient.service```
+
+```
+[Unit]
+Description=Audio socket client
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+ExecStart=/home/pi/p_display/xdisp.py
+WorkingDirectory=/home/pi
+
+[Install]
+WantedBy=multi-user.target
+```
 
 Start services & view logs
 ```
