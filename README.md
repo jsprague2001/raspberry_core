@@ -103,6 +103,11 @@ $ sudo pip3 install virtualenv
 $ virtualenv v_raspberry_1
 ```
 
+## User Management
+
+https://www.raspberrypi.org/forums/viewtopic.php?t=169079
+https://wiki.archlinux.org/index.php/Users_and_groups#Group_management
+
 ## Service Setup & Management
 
 ```
@@ -123,7 +128,7 @@ $ journalctl -u service-name.service -b
 
 ```
 
-
+## Code Management
 
 Git Push: Prepare existing device for git push
 ```
@@ -145,8 +150,3 @@ Git Clone: Prepare new device
 ```
 $ git clone https://github.com/jsprague2001/raspberry_music_streamer.git p_raspberry_music
 ```
-
-adding users
-
-https://www.raspberrypi.org/forums/viewtopic.php?t=169079
-https://wiki.archlinux.org/index.php/Users_and_groups#Group_management
