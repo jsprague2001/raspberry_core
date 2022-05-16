@@ -66,11 +66,17 @@ https://www.raspberrypi.com/documentation/computers/configuration.html#configuri
 
 Use display of your choice. Adafruit offers a number of display drivers.
 
+Configure 
+```
+$ sudo apt-get install -y i2c-tools
+
+# Interface Options.  I2C & SPI
+$ sudo raspi-config
+```
+
 Setup Libraries
 ```
 $ pip3 install adafruit-circuitpython-ssd1305
-$ sudo apt-get install -y i2c-tools
-$ sudo raspi-config
 $ pip3 install digitalio
 $ pip3 install PIL
 $ pip3 install python-pillow
