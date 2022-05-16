@@ -96,12 +96,34 @@ $ sudo cat /etc/hosts
 $ sudo shutdown -r now
 ```
 
-Setup Virtual Environment
+## Setup Python Virtual Environment
 ```
 $ sudo apt install python3-pip
 $ sudo pip3 install virtualenv
 $ virtualenv v_raspberry_1
 ```
+
+## Service Setup & Management
+
+```
+# https://www.raspberrypi.org/documentation/linux/usage/systemd.md
+sudo cp tftdisplay.service /etc/systemd/system/tftdisplay.service
+# Issues?  check permissions in /etc/systemd/system/
+
+sudo systemctl start tftdisplay.service
+sudo systemctl enable tftdisplay.service
+
+$ systemctl status tftdisplay.service
+
+Just use the journalctl command, as in:
+$ journalctl -u service-name.service
+
+Or, to see only log messages for the current boot:
+$ journalctl -u service-name.service -b
+
+```
+
+
 
 Git Push: Prepare existing device for git push
 ```
