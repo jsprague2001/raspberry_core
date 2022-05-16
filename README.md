@@ -110,13 +110,20 @@ https://wiki.archlinux.org/index.php/Users_and_groups#Group_management
 
 ## Service Setup & Management
 
-```
-# https://www.raspberrypi.org/documentation/linux/usage/systemd.md
-sudo cp tftdisplay.service /etc/systemd/system/tftdisplay.service
-# Issues?  check permissions in /etc/systemd/system/
+Setup service file
 
-sudo systemctl start tftdisplay.service
-sudo systemctl enable tftdisplay.service
+https://www.raspberrypi.com/documentation/computers/using_linux.html#the-systemd-daemon
+
+```
+$ touch tftdisplay.service
+$ sudo cp tftdisplay.service /etc/systemd/system/tftdisplay.service
+# Issues?  check permissions in /etc/systemd/system/
+```
+
+Start services & view logs
+```
+$ sudo systemctl start tftdisplay.service
+$ sudo systemctl enable tftdisplay.service
 
 $ systemctl status tftdisplay.service
 
