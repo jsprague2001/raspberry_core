@@ -103,6 +103,13 @@ $ sudo pip3 install virtualenv
 $ virtualenv v_raspberry_1
 ```
 
+## Package issues?
+```
+Try this:
+
+$ sudo apt update
+```
+
 ## User Management
 
 https://www.raspberrypi.org/forums/viewtopic.php?t=169079
