@@ -110,6 +110,11 @@ Try this:
 $ sudo apt update
 ```
 
+## No fonts?
+```
+$ sudo apt-get install ttf-dejavu
+```
+
 ## User Management
 
 https://www.raspberrypi.org/forums/viewtopic.php?t=169079
