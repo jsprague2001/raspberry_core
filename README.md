@@ -186,3 +186,30 @@ Git Clone: Prepare new device
 ```
 $ git clone https://github.com/jsprague2001/raspberry_music_streamer.git p_raspberry_music
 ```
+## DHCP Server
+
+1. Open Network Preferences
+
+2. Set your Wired Network Interface Card with the following IP address
+
+IP address - 192.168.10.2
+
+Subnet Mask - 255.255.255.0
+
+3. Open the Terminal application and create under "/etc" the DHCP config file, name it "bootpd.plist" elevating your permission using "sudo"
+
+```
+sudo vi /etc/bootpd.plist
+```
+
+
+Source: https://support.atlona.com/hc/en-us/articles/360007290473-KB01474-How-to-turn-your-computer-Mac-OS-into-a-DHCP-server-to-give-your-Atlona-unit-an-IP-address
+
+4. To start the DHCP Server
+```
+sudo /bin/launchctl load -w /System/Library/LaunchDaemons/bootps.plist
+```
+5. To stop the DHCP server
+```
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
+```
