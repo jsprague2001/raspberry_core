@@ -202,14 +202,14 @@ Subnet Mask - 255.255.255.0
 sudo vi /etc/bootpd.plist
 ```
 
-
-Source: https://support.atlona.com/hc/en-us/articles/360007290473-KB01474-How-to-turn-your-computer-Mac-OS-into-a-DHCP-server-to-give-your-Atlona-unit-an-IP-address
-
 4. To start the DHCP Server
 ```
 sudo /bin/launchctl load -w /System/Library/LaunchDaemons/bootps.plist
 ```
+
 5. To stop the DHCP server
 ```
 sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
 ```
+
+Source: https://support.atlona.com/hc/en-us/articles/360007290473-KB01474-How-to-turn-your-computer-Mac-OS-into-a-DHCP-server-to-give-your-Atlona-unit-an-IP-address
