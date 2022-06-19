@@ -213,3 +213,38 @@ sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
 ```
 
 Source: https://support.atlona.com/hc/en-us/articles/360007290473-KB01474-How-to-turn-your-computer-Mac-OS-into-a-DHCP-server-to-give-your-Atlona-unit-an-IP-address
+
+## IP Management
+To find ip addresses on MAC OS
+
+```
+% arp -a
+? (192.168.10.0) at ff:ff:ff:ff:ff:ff on en8 ifscope [ethernet]
+? (192.168.10.2) at a0:ce:c8:cf:54:7a on en8 ifscope permanent [ethernet]
+? (192.168.10.100) at dc:a6:32:4e:87:96 on en8 ifscope [ethernet]
+? (192.168.10.255) at ff:ff:ff:ff:ff:ff on en8 ifscope [ethernet]
+? (192.168.11.1) at bc:e6:7c:8:63:8 on en0 ifscope [ethernet]
+? (192.168.11.76) at 5a:45:4a:49:41:ee on en0 ifscope [ethernet]
+? (192.168.11.120) at ce:ab:a1:af:fb:39 on en0 ifscope [ethernet]
+? (192.168.11.121) at a2:5b:8a:af:a2:28 on en0 ifscope [ethernet]
+? (192.168.11.253) at (incomplete) on en0 ifscope [ethernet]
+? (192.168.11.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
+all-systems.mcast.net (224.0.0.1) at 1:0:5e:0:0:1 on en0 ifscope permanent [ethernet]
+? (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet]
+? (225.255.255.255) at 1:0:5e:7f:ff:ff on en0 ifscope permanent [ethernet]
+? (239.255.255.250) at 1:0:5e:7f:ff:fa on en0 ifscope permanent [ethernet]
+? (239.255.255.250) at 1:0:5e:7f:ff:fa on en8 ifscope permanent [ethernet]
+broadcasthost (255.255.255.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
+```
+Alternative for Linux
+
+```
+nmap -sn 192.168.1.0/24
+```
+Wireless
+```
+iwgetid
+
+iwconfig
+```
+
