@@ -115,6 +115,15 @@ $ sudo apt update
 $ sudo apt-get install ttf-dejavu
 ```
 
+## Common Missing Libraries
+```
+libopenjp2.so.7
+$ sudo apt-get install libopenjp2-7
+
+
+
+```
+
 ## User Management
 
 https://www.raspberrypi.org/forums/viewtopic.php?t=169079
