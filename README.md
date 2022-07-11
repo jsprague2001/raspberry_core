@@ -117,10 +117,9 @@ $ sudo apt-get install ttf-dejavu
 
 ## Common Missing Libraries
 ```
-libopenjp2.so.7
+
 $ sudo apt-get install libopenjp2-7
-
-
+$ sudo apt install libatlas-base-dev
 
 ```
 
