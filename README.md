@@ -255,4 +255,12 @@ iwgetid
 
 iwconfig
 ```
+# Working Projects
+
+https://pimylifeup.com/raspberry-pi-wireless-access-point/comment-page-1/
+
+https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/
+
+
+
 
