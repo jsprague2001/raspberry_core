@@ -108,6 +108,7 @@ $ virtualenv v_raspberry_1
 Try this:
 
 $ sudo apt update
+$ sudo apt upgrade
 ```
 
 ## No fonts?
