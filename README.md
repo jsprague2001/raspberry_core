@@ -61,6 +61,26 @@ Eject SD card and boot in Raspberry PI
 https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
 https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
+## New system or package issues
+```
+Try this:
+
+$ sudo apt update
+$ sudo apt upgrade
+```
+
+## Setup Python Virtual Environment
+```
+$ sudo apt install python3-pip
+$ sudo apt-get install python3-venv
+
+$ mkdir my_project
+$ cd my_project
+$ python -m venv env
+
+$ admin@lcdnas:~/p_audio_display $ source ./env/bin/activate
+(env) admin@lcdnas:~/p_audio_display $
+```
 
 ## Display Setup
 
@@ -96,20 +116,7 @@ $ sudo cat /etc/hosts
 $ sudo shutdown -r now
 ```
 
-## Setup Python Virtual Environment
-```
-$ sudo apt install python3-pip
-$ sudo pip3 install virtualenv
-$ virtualenv v_raspberry_1
-```
 
-## Package issues?
-```
-Try this:
-
-$ sudo apt update
-$ sudo apt upgrade
-```
 
 ## No fonts?
 ```
