@@ -94,8 +94,28 @@ $ sudo apt-get install -y i2c-tools
 $ sudo raspi-config
 ```
 
+
+
+## Setup system-wide libraries
+
+
+```
+$ sudo apt install python3-pip
+$ sudo apt install libopenjp2-7
+$ sudo apt install libatlas-base-dev
+
+$ sudo apt-get install libxslt-dev
+```
+
 Setup Libraries
 ```
+$ sudo apt-get install libatlas-base-dev
+
+$ pip3 install RPi.GPIO 
+$ pip3 install spidev
+$ pip3 install numpy
+
+================= Need all this?
 $ pip3 install adafruit-circuitpython-ssd1305
 $ pip3 install digitalio
 $ pip3 install PIL
