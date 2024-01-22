@@ -1,6 +1,6 @@
 # The Core Build of a Raspberry Pi
 
-Update on 05/10/2022
+Update on 01/22/2024
 
 This is the repo for building a Pi from scratch.
 
@@ -10,61 +10,23 @@ Use the Offical Mac Raspberry Pi Imager v1.4
 
 Source: https://www.raspberrypi.com/software/
 
-It seems to update the Pi OS on a regular basis.  
+It updates the Pi OS on a regular basis.  
 
-Connect Pi with ```ethernet``` at first -or - see wifi setup.
-
-Boot Pi with new image.  Takes about 2 min on a 2GB Pi
-
-Find the PI on the network, can be tricky with lots of devices!
-
-Log into the Pi
+Connect Pi with ```ethernet``` at first -or - use the image options to use WiFi.
 
 ## Authentication
 
-username: pi
+Set username, recommend admin or something other than Pi.
 
-password: raspberry (default)
+Boot Pi with new image.  Takes about 2 min on a 2GB Pi.
 
-https://www.raspberrypi.com/documentation/computers/remote-access.html#secure-shell-from-linux-or-mac-os
+Find the PI on the network, can be tricky with lots of devices!
 
-## Wifi Setup
+SSH into the Pi
 
-For security reasons, ssh is no longer enabled by default. To enable it you need to place an empty file named ssh (no extension) in the root of the boot disk.
-
-```
-touch /Volumes/boot/ssh
-```
-
-Create a file in the root of boot called: wpa_supplicant.conf 
-
-```
-touch /Volumes/boot/wpa_supplicant.conf
-```
-
-Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
-
-```
-country=US
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-
-network={
-    ssid="NETWORK-NAME"
-    psk="NETWORK-PASSWORD"
-}
-```
-
-Eject SD card and boot in Raspberry PI
-
-
-https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
-https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
 ## New system or package issues
 ```
-Try this:
-
 $ sudo apt update
 $ sudo apt upgrade
 ```
@@ -289,6 +251,39 @@ https://pimylifeup.com/raspberry-pi-wireless-access-point/comment-page-1/
 
 https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/
 
+
+## Legacy Wifi Setup
+
+For security reasons, ssh is no longer enabled by default. To enable it you need to place an empty file named ssh (no extension) in the root of the boot disk.
+
+```
+touch /Volumes/boot/ssh
+```
+
+Create a file in the root of boot called: wpa_supplicant.conf 
+
+```
+touch /Volumes/boot/wpa_supplicant.conf
+```
+
+Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
+
+```
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="NETWORK-NAME"
+    psk="NETWORK-PASSWORD"
+}
+```
+
+Eject SD card and boot in Raspberry PI
+
+
+https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
+https://www.raspberrypi.com/documentation/computers/configuration.html#configuring-networking
 
 
 
