@@ -40,15 +40,17 @@ $ sudo apt-get install python3-venv
 
 $ mkdir my_project
 $ cd my_project
-$ python -m venv env
+$ python -m venv --system-site-packages env_name
+
+# --system-site-packages lets the new venv use system wide libraries like numpy.
 
 $ admin@lcdnas:~/p_audio_display $ source ./env/bin/activate
-(env) admin@lcdnas:~/p_audio_display $
+(env_name) admin@lcdnas:~/p_audio_display $
 ```
 
 ## Display Setup
 
-Use display of your choice. Adafruit offers a number of display drivers. See the display repo for more info.
+Use display of your choice. Adafruit offers a number of display drivers. See the ```display repo``` for more info.
 
 Configure 
 ```
@@ -61,16 +63,12 @@ $ sudo raspi-config
 ## Setup system-wide libraries
 
 ```
-$ sudo apt install python3-pip
-$ sudo apt install libopenjp2-7
-$ sudo apt install libatlas-base-dev
-
+$ sudo apt-get install python3-pip
 $ sudo apt-get install libxslt-dev
 ```
 
 Setup Libraries
 ```
-$ sudo apt-get install libatlas-base-dev
 $ pip3 install RPi.GPIO 
 $ pip3 install spidev
 $ pip3 install numpy
@@ -82,7 +80,6 @@ $ pip3 install PIL
 $ pip3 install python-pillow
 $ pip3 install pillow  
 ```
-
 
 ## Common Missing Libraries
 ```
