@@ -16,11 +16,13 @@ Connect Pi with ```ethernet``` at first -or - use the image options to use WiFi.
 
 ## Authentication
 
-Set username, recommend admin or something other than Pi.
+Set username, recommend admin or something other than ```pi```
+
+Set the hostname using ```hostname.local``` makes it eaiser to find on the network.
 
 Boot Pi with new image.  Takes about 2 min on a 2GB Pi.
 
-Find the PI on the network, can be tricky with lots of devices!
+Find the Pi on the network, can be tricky with lots of devices!
 
 SSH into the Pi
 
@@ -46,7 +48,7 @@ $ admin@lcdnas:~/p_audio_display $ source ./env/bin/activate
 
 ## Display Setup
 
-Use display of your choice. Adafruit offers a number of display drivers.
+Use display of your choice. Adafruit offers a number of display drivers. See the display repo for more info.
 
 Configure 
 ```
@@ -56,10 +58,7 @@ $ sudo apt-get install -y i2c-tools
 $ sudo raspi-config
 ```
 
-
-
 ## Setup system-wide libraries
-
 
 ```
 $ sudo apt install python3-pip
@@ -72,7 +71,6 @@ $ sudo apt-get install libxslt-dev
 Setup Libraries
 ```
 $ sudo apt-get install libatlas-base-dev
-
 $ pip3 install RPi.GPIO 
 $ pip3 install spidev
 $ pip3 install numpy
