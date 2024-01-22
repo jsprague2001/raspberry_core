@@ -85,18 +85,6 @@ $ pip3 install pillow
 
 ## Basic Setup
 
-Here are some helpful setup tasks for any Raspberry Pi.
-
-Setup Host
-```
-$ hostname
-$ sudo raspi-config nonint do_change_hostname raspberrymusic  (no spaces or other characters!)
-$ sudo cat /etc/hostname
-$ sudo cat /etc/hosts
-$ sudo shutdown -r now
-```
-
-
 
 ## No fonts?
 ```
@@ -105,10 +93,8 @@ $ sudo apt-get install ttf-dejavu
 
 ## Common Missing Libraries
 ```
-
 $ sudo apt-get install libopenjp2-7
 $ sudo apt install libatlas-base-dev
-
 ```
 
 ## User Management
