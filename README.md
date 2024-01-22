@@ -83,18 +83,19 @@ $ pip3 install python-pillow
 $ pip3 install pillow  
 ```
 
-## Basic Setup
-
-
-## No fonts?
-```
-$ sudo apt-get install ttf-dejavu
-```
 
 ## Common Missing Libraries
 ```
 $ sudo apt-get install libopenjp2-7
 $ sudo apt install libatlas-base-dev
+```
+
+
+## Included Fonts
+```
+$ sudo find / -name *.ttf
+/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
 ```
 
 ## User Management
