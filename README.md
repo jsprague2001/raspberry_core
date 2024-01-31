@@ -33,6 +33,13 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
+## Setup system-wide libraries
+
+```
+$ sudo apt-get install libxslt-dev
+$ sudo apt-get install git
+```
+
 ## Setup Python Virtual Environment
 ```
 $ sudo apt install python3-pip
@@ -40,7 +47,7 @@ $ sudo apt-get install python3-venv
 
 $ mkdir my_project
 $ cd my_project
-$ python -m venv --system-site-packages env_name
+$ python -m venv --system-site-packages v_env
 
 # --system-site-packages lets the new venv use system wide libraries like numpy.
 
@@ -122,13 +129,6 @@ $ sudo apt-get install -y i2c-tools
 $ sudo raspi-config
 ```
 
-## Setup system-wide libraries
-
-```
-$ sudo apt-get install python3-pip
-$ sudo apt-get install libxslt-dev
-$ sudo apt-get install git
-```
 
 Setup Libraries
 ```
