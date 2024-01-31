@@ -47,6 +47,35 @@ $ python -m venv --system-site-packages env_name
 $ admin@lcdnas:~/p_audio_display $ source ./env/bin/activate
 (env_name) admin@lcdnas:~/p_audio_display $
 ```
+# With and without system-site-packages
+
+```
+# Numpy test, no virtual enviornments
+admin@olednas:~/p_display $ python xtest.py 
+(1, 6)
+
+admin@olednas:~/p_display $ ls -l
+total 12
+drwxr-xr-x 6 admin admin 4096 Jan 30 22:44 env_local
+drwxr-xr-x 6 admin admin 4096 Jan 30 22:44 env_nosystemsite
+-rw-r--r-- 1 admin admin   75 Jan 31 09:25 xtest.py
+
+# Using a default virtual enviornment
+admin@olednas:~/p_display $ source env_nosystemsite/bin/activate
+(env_nosystemsite) admin@olednas:~/p_display $ python xtest.py 
+Traceback (most recent call last):
+  File "/home/admin/p_display/xtest.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+(env_nosystemsite) admin@olednas:~/p_display $ deactivate 
+
+# Using a virtual enviornment with system-site-packages
+admin@olednas:~/p_display $ source env_local/bin/activate
+(env_local) admin@olednas:~/p_display $ python xtest.py 
+(1, 6)
+
+```
 
 # Stock Pip on a brand new system
 ```
