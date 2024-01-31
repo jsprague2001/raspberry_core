@@ -48,6 +48,39 @@ $ admin@lcdnas:~/p_audio_display $ source ./env/bin/activate
 (env_name) admin@lcdnas:~/p_audio_display $
 ```
 
+# Stock Pip on a brand new system
+```
+admin@olednas:~ $ pip list
+Package       Version
+------------- ---------
+certifi       2020.6.20
+chardet       4.0.0
+colorzero     1.1
+distro        1.5.0
+gpiozero      1.6.2
+idna          2.10
+numpy         1.19.5
+picamera2     0.3.12
+pidng         4.0.9
+piexif        1.1.3
+Pillow        8.1.2
+pip           20.3.4
+python-apt    2.2.1
+python-prctl  1.7
+requests      2.25.1
+RPi.GPIO      0.7.0
+setuptools    52.0.0
+simplejpeg    1.6.4
+six           1.16.0
+spidev        3.5
+ssh-import-id 5.10
+toml          0.10.1
+urllib3       1.26.5
+v4l2-python3  0.3.2
+wheel         0.34.2
+admin@olednas:~ $ 
+```
+
 ## Display Setup
 
 Use display of your choice. Adafruit offers a number of display drivers. See the ```display repo``` for more info.
