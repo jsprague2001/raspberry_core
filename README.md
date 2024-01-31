@@ -127,6 +127,7 @@ $ sudo raspi-config
 ```
 $ sudo apt-get install python3-pip
 $ sudo apt-get install libxslt-dev
+$ sudo apt-get install git
 ```
 
 Setup Libraries
