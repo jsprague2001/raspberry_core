@@ -22,7 +22,7 @@ Set the hostname using ```hostname.local``` makes it eaiser to find on the netwo
 
 Boot Pi with new image.  Takes about 2 min on a 2GB Pi.
 
-Find the Pi on the network, can be tricky with lots of devices!
+Finding the Pi on the network, can be tricky with lots of devices!
 
 SSH into the Pi
 
