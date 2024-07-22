@@ -297,6 +297,15 @@ https://pimylifeup.com/raspberry-pi-wireless-access-point/comment-page-1/
 https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/
 
 
+## Apache2
+
+https://projects.raspberrypi.org/en/projects/lamp-web-server-with-wordpress/2
+
+```
+sudo apt-get install apache2 -y
+```
+
+
 ## Legacy Wifi Setup
 
 For security reasons, ssh is no longer enabled by default. To enable it you need to place an empty file named ssh (no extension) in the root of the boot disk.
